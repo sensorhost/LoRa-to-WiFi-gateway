@@ -4,18 +4,17 @@
 ### Introduction
 
 The SensorHost LoRa to WiFi Gateway is a small device that provides connectivity between our LoRa sensors and your WiFi access point.
-It is powered by a mains plug in power supply that provides 5volts DC. There are four indicator lights that provide the following information.
+It is powered by a mains plug in power supply that provides 5volts DC. There are three indicator lights that provide the following information.
 - Green (Power on)
 - Blue (Wi-Fi operational status)
 - Red (Wi-Fi activity)
-- Yellow (LoRa activity)
 
 
 ### Requirements
 
 - The gateway needs to be installed within range of your WiFi modem
 - The gateway also needs to be located within range of your Lora sensors.
-- The gateway connects using WPA2 security.
+- The gateway connects to your WiFi access point using WPA2 security.
 
 
 ### Configuration - Connect to WiFi
@@ -25,13 +24,13 @@ When the gateway has not been configured, it becomes an access point (AP) and th
 While in AP mode, you can use your smart device (phone/tablet/laptop) to connect to and configure the settings.
 - On your smart device, look for an AP named LG01_AABBCCDD where `AABBCCDD` is part of the gateway key.
 - Connect to this AP using `sensorhost` as the password.
-- Once connected, open the web browser and enter `42.42.42.42` in the address bar.
+- Once connected, open a web browser (Firefox or Chrome) and enter `42.42.42.42` in the address bar.
 - The web page opens allowing you to set the WiFi credentials for your WiFi AP.
 - Choose your WiFi AP, then enter it's password and then save the settings.
-- The LG01 will then reboot and connect to your WiFi AP and start operating.
+- The gateway will then reboot and connect to your WiFi AP and start operating.
 
 Once the gateway has connected to your WiFi AP, the blue light should flash once every few seconds.
-
+After 30-60 seconds, if the gateway blue light is flashing 3 times, you have most likely entered the wrong credentials for your WiFi access point to connect to. Please reset the gateway WiFi settings and start again.
 
 ### Configuration - Add gateway to your account
 The gateway communicates with our server providing signal level information. For the gateway to operate normally, you need to add it to your account.
